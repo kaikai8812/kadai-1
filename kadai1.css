@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+header {
+  background-color: #ff9a4b;
+  height: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+footer {
+  background-color: #aaaaaa;
+  height: 50px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.main-area {
+  width: 960px;
+  /* height: 200px; */
+  margin: 0 auto;
+  /* background-color: wheat; */
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+  /* height: 100px; */
+  position: relative;
+  background-color: #eeeeee;
+}
+
+.tag {
+  position: absolute;
+  background-color: #ff9a4b;
+  color: white;
+}
+
+.box:nth-child(1),
+.box:nth-child(2) {
+  margin-right: 30px;
+}
+
+.content-area {
+  margin: 10px;
+}
+
+.image {
+  width: 280px;
+  height: 150px;
+  object-fit: cover;
+  object-position: bottom;
+  /* margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px; */
+}
+
+.box-title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  .main-area {
+    width: 100%;
+  }
+
+  .box {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .box:nth-child(1),
+  .box:nth-child(2) {
+    margin: 0 auto;
+  }
+  /* 1つ目と二つ目は別の処理がされているため、別で処理。 */
+
+  .content-area {
+    width: 90%;
+  }
+
+  .main-area {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .image {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    /* object-fit: cover; */
+  }
+}
