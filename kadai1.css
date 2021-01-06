@@ -102,3 +102,12 @@ footer {
     /* object-fit: cover; */
   }
 }
+
+.content-area {
+  margin: 10px;
+}
+
+.content-area:nth-child(1),
+.content-area:nth-child(2) {
+  margin-bottom: 20px;
+}
